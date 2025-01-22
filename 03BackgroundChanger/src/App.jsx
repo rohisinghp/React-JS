@@ -6,11 +6,11 @@ function App() {
   let [headingC , setHeadingC] = useState('white');
 
   return (
-     <div className='w-full h-screen'
+     <div className='w-full h-screen duration-1000'
      style={{backgroundColor: color}}>
 
-      <h1 className= ' flex justify-center text-6xl font-bold p-5'
-        style={{color : headingC}}
+      <h1 className= ' flex justify-center text-6xl font-bold p-5 duration-700'
+        style={{ color : headingC}}
       >BackGround Changer</h1>
 
       <div className='fixed flex flex-wrap justify-center inset-x-0 bottom-12'>
