@@ -5,7 +5,7 @@ function Cardfirst(prop){
 
     
    function increase(){
-     prop.setCount(prop.count+1);
+     prop.setCount(prop.count-1);
    }
     return(
         <>
