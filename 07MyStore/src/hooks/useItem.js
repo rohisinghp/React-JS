@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 function useItem(){
     const [products,  setProducts] = useState([])
 
-
     useEffect(()=>{
 
         fetch('https://fakestoreapi.com/products')
@@ -12,7 +11,9 @@ function useItem(){
         .then((res)=>setProducts(res))
 
     },[])
-    return products;
+
+    return {products};
+
 }
 
 export default useItem;

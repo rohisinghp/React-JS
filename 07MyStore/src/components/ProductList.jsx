@@ -1,29 +1,20 @@
-import { useEffect, useState } from "react"
-import ProductComponent from "./prodect"
+import ProductComponent from "./product"
+import useItem from "../hooks/useItem"
+
 
 const ProductList = ()=>{
-        const [products,  setProducts] = useState([])
-            
+        
+   const {products} = useItem()
 
-     useEffect(()=>{
-    
-            fetch('https://fakestoreapi.com/products')
-            .then((res)=> res.json())
-            .then((res)=>setProducts(res))
-
-    
-        },[])
-
-        const prolist = products.map(item => item);
         // console.log(prolist)
   
     return(
         <>
-          <div > 
+          <div className="productlist"> 
             {
-               prolist.map((item)=>
+               products.map((item,index)=>
 
-                  <ProductComponent 
+                  <ProductComponent key={index}
                   title={item.title} 
                   price={item.price} 
                   description={item.description} 
