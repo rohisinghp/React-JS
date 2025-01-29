@@ -7,7 +7,6 @@ const App = () => {
     return (
         
         <>
-        <button className='bg-amber-300 outline-none'>Hello</button>
         <InputBox/>
         </>
 
