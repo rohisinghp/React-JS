@@ -16,13 +16,13 @@ function App() {
   setIsLoggedIn(false);
 
   }
-
+                             
   return (
     <>
     <LogInContext.Provider value={{isLoggedIn, handleLogin:handleLogin, handleLogout:handleLogout}}>
     <h1>User Authentication</h1>
      <Home />
-    
+
 
     </LogInContext.Provider>
      {/* <h1>User Authentication</h1>

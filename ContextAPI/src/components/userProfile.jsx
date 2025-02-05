@@ -9,9 +9,7 @@ const Userprofile = (
     // handleLogout
 )=>{
     
-    const {isLoggedIn,
-            handleLogin,
-            handleLogout} = useContext(LogInContext)
+    const {isLoggedIn, handleLogin, handleLogout} = useContext(LogInContext)
 
 
     return(

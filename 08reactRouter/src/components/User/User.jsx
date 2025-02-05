@@ -4,12 +4,13 @@ import { useParams } from "react-router-dom";
 export default function User() {
 
     const {userid} = useParams();
-    
+
 
     return(
         <>
          <div className="text-black text-2xl justify-center flex font-bold bg-amber-400">User : {userid}</div>
          <button class="btn btn-primary">Button</button>
+
 
          <div className="card bg-base-100 w-96 shadow-xl">
   <figure>
@@ -25,6 +26,7 @@ export default function User() {
     </div>
   </div>
 </div>
+
 
 <div className="card bg-base-100 w-96 shadow-xl">
   <figure>

@@ -17,7 +17,6 @@ const reactElement={
         target: '_blank'
     },
     Children: "Hey click me to visit "
-
 }
 
 const mainContainer = document.getElementById('root');
