@@ -18,16 +18,16 @@ function App() {
   }
                              
   return (
-    <>
-    <LogInContext.Provider value={{isLoggedIn, handleLogin:handleLogin, handleLogout:handleLogout}}>
+  
+    <LogInContext.Provider value={{isLoggedIn, handleLogin, handleLogout}}>
     <h1>User Authentication</h1>
      <Home />
 
 
     </LogInContext.Provider>
-     {/* <h1>User Authentication</h1>
-     <Home isLoggedIn={isLoggedIn} handleLogin={handleLogin} handleLogout={handleLogout}/> */}
-    </>
+    //  {/* <h1>User Authentication</h1>
+    //  <Home isLoggedIn={isLoggedIn} handleLogin={handleLogin} handleLogout={handleLogout}/> */}
+  
   )
 }
 
